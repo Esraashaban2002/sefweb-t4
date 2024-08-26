@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import { useForm } from 'react-hook-form'
 import Sidebar from './Sidebar'
 import './forms.css'
@@ -7,6 +7,7 @@ import DragDropFile from './DragDropFile'
 
 function Articleform() {
     const { register, handleSubmit, formState: { errors } } = useForm();
+    
     return (
       <div className='section-article'>
          <div className='overlay'> 
@@ -21,7 +22,7 @@ function Articleform() {
                 <h2 className='col-12 col-md-6'>add article details</h2>
                 <button  className='col-6 col-md-2'>publish</button>
             </div>
-        <form className='w-100'>
+        <form>
         <div className='row'>
         <div className='col-12 col-md-7 mb-4 order-1 order-md-0'>
           <label htmlFor="title" className='mb-2'>Article Title</label>
@@ -57,7 +58,7 @@ function Articleform() {
           {errors.content && <p className='text-danger'>{errors.content.message}</p>}
         </div>
 
-        <div className='col-12 col-md-4 mb-4 form_date order-4 order-md-0'> 
+        <div className='col-12 col-md-6 mb-4 form_date order-4 order-md-0'> 
           <label htmlFor="date" className='mb-2'>publishing date</label>
           <input
            type='date'

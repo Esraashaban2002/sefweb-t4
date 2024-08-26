@@ -25,7 +25,7 @@ function Courseform() {
         <form>
         <div className='row'>
 
-        <div className='col-12 col-md-6 mb-4 form_select'>
+        <div className='col-12 col-lg-5 mb-4 form_select'>
           <label htmlFor="courseName" className='mb-2'>course name</label>
           <select id='courseName' 
            {...register('courseName', { required: 'course name is required'})}
@@ -41,7 +41,7 @@ function Courseform() {
           {errors.courseName && <p className='text-danger'>{errors.courseName.message}</p>}
         </div>
   
-        <div className='col-12 col-md-2 mb-4'>
+        <div className='col-12 col-md-4 col-lg-2 mb-4'>
           <label htmlFor="level" className='mb-2'>level</label>
           <input
             id="level"
@@ -51,7 +51,7 @@ function Courseform() {
           {errors.level && <p className='text-danger'>{errors.level.message}</p>}
         </div>
 
-        <div className='col-12 col-md-4 mb-4'>
+        <div className='col-12 col-md-8 col-lg-5 mb-4'>
           <label htmlFor="numOfLesson" className='mb-2'>number of lessons</label>
           <input
             id="numOfLesson"
@@ -61,7 +61,7 @@ function Courseform() {
           {errors.numOfLesson && <p className='text-danger'>{errors.numOfLesson.message}</p>}
         </div>
 
-        <div className='col-12 col-md-3 mb-4'>
+        <div className='col-12 col-md-6 col-lg-3 mb-4'>
           <label htmlFor="language" className='mb-2'>language</label>
           <input
             id="language"
@@ -71,7 +71,7 @@ function Courseform() {
           {errors.language && <p className='text-danger'>{errors.language.message}</p>}
         </div>
 
-        <div className='col-12 col-md-3 mb-4 form_date'> 
+        <div className='col-12 col-md-6 col-lg-3 mb-4 form_date'> 
           <label htmlFor="date" className='mb-2'>start date</label>
           <input
            type='date'
@@ -82,7 +82,7 @@ function Courseform() {
           {errors.date && <p className='text-danger'>{errors.date.message}</p>}
         </div>
 
-        <div className='col-12 col-md-3 mb-4 form_date'> 
+        <div className='col-12 col-md-6 col-lg-3 mb-4 form_date'> 
           <label htmlFor="time" className='mb-2'>duration</label>
           <input
            type='time'
@@ -93,7 +93,7 @@ function Courseform() {
           {errors.time && <p className='text-danger'>{errors.time.message}</p>}
         </div>
 
-        <div className='col-12 col-md-3 mb-4'>
+        <div className='col-12 col-md-6 col-lg-3 mb-4'>
           <label htmlFor="certificate" className='mb-2'>certificate</label>
           <input
             id="certificate"
@@ -143,7 +143,7 @@ function Courseform() {
           {errors.courseMater && <p className='text-danger'>{errors.courseMater.message}</p>}
         </div>
 
-        <div className='col-12 col-md-4 mb-4 form_date'> 
+        <div className='col-12 col-md-6 col-lg-4 mb-4 form_date'> 
           <label htmlFor="publishingDate" className='mb-2'>publishing date</label>
           <input
            type='date'

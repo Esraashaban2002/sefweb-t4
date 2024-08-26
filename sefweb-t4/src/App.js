@@ -9,11 +9,11 @@ import './App.css'
 function App() {
       return(
         <div className="div1">
-           {/* <Articleform /> */}
+           <Articleform />
            {/* <Jobform /> */}
            {/* <Certificateform />  */}
            {/* <Userform /> */}
-           <Courseform />
+           {/* <Courseform /> */}
 
         </div>
       );

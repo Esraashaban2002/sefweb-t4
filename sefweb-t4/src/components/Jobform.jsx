@@ -25,7 +25,7 @@ function Jobform() {
           <form>
           <div className='row'>
             <div className='row'>
-                <div className='col-12 col-md-7 row'>
+                <div className='col-12 col-lg-7 row'>
                 <div className='col-12  mb-4 order-0 order-md-0'>
             <label htmlFor="companyName" className='mb-2'>company name</label>
             <input
@@ -65,7 +65,7 @@ function Jobform() {
                 </div> {/* select location */}
            </div> 
 
-           <div className='col-12 col-md-5 mb-4 mb-md-0 browse'>
+           <div className='col-12 col-lg-5 mb-4 mb-lg-0 browse'>
           <label htmlFor="" className='mb-2'>company logo</label>
           <DragDropFile />
           {errors.Photo && <p className='text-danger'>{errors.Photo.message}</p>}
@@ -83,7 +83,7 @@ function Jobform() {
             {errors.content && <p className='text-danger'>{errors.content.message}</p>}
           </div>
           
-          <div className='col-12 col-md-5 mb-4 '>
+          <div className='col-12 col-lg-5 mb-4 '>
           <label htmlFor="position" className='mb-2'>position</label>
           <input
             id="position"
@@ -93,7 +93,7 @@ function Jobform() {
           {errors.position && <p className='text-danger'>{errors.position.message}</p>}
         </div>
 
-        <div className='col-12 col-md-3 mb-4 '>
+        <div className='col-12 col-lg-3 mb-4 '>
           <label htmlFor="jobType" className='mb-2'>job type</label>
           <input
             id="jobType"
@@ -103,21 +103,21 @@ function Jobform() {
           {errors.jobType && <p className='text-danger'>{errors.jobType.message}</p>}
         </div>
         
-        <div className='col-6 col-md-2 radio-input '>
+        <div className='col-6 col-lg-2 radio-input '>
         <label htmlFor="remote">remote
             <input type="radio"  name='radio' id='remote' />
             <span class="checkmark"></span>
             </label>
         </div>
 
-        <div className='col-6 col-md-2 radio-input'>
+        <div className='col-6 col-lg-2 radio-input'>
         <label htmlFor="onSite">on Site
             <input type="radio" name='radio' id='onSite' />
             <span class="checkmark"></span>
              </label>
         </div>
 
-          <div className='col-12 col-md-8 mb-4 row '>
+          <div className='col-12 col-lg-8 mb-4 row '>
           <label>Salary Range</label>
         <div  className='col-6'>
           <input
@@ -138,7 +138,7 @@ function Jobform() {
           {errors.position && <p className='text-danger'>{errors.position.message}</p>}
         </div>
 
-            <div className='col-12 col-md-4 mb-4 form_select '>
+            <div className='col-12 col-lg-4 mb-4 form_select '>
                         <label htmlFor="currency" className='mb-2'>currency</label>
                         <select id='currency' 
                         {...register('currency', { required: 'currency is required'})}

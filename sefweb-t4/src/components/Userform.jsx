@@ -24,7 +24,7 @@ function Userform() {
         <form>
         <div className='row'>
 
-        <div className='col-12 col-md-5 mb-4'>
+        <div className='col-12 col-lg-5 mb-4'>
           <label htmlFor="firstName" className='mb-2'>first name</label>
           <input
             id="firstName"
@@ -34,7 +34,7 @@ function Userform() {
           {errors.firstName && <p className='text-danger'>{errors.firstName.message}</p>}
         </div>
 
-        <div className='col-12 col-md-4 mb-4'>
+        <div className='col-12 col-lg-5 mb-4'>
           <label htmlFor="lastName" className='mb-2'>last name</label>
           <input
             id="lastName"
@@ -44,7 +44,7 @@ function Userform() {
           {errors.lastName && <p className='text-danger'>{errors.lastName.message}</p>}
         </div>
   
-        <div className='col-12 col-md-3 mb-4 form_select'>
+        <div className='col-12 col-lg-2 mb-4 form_select'>
           <label htmlFor="status" className='mb-2'>status</label>
           <select id='status' 
            {...register('status', { required: 'status is required'})}
@@ -57,7 +57,7 @@ function Userform() {
           {errors.status && <p className='text-danger'>{errors.status.message}</p>}
         </div>
 
-        <div className='col-12 col-md-8 mb-4'>
+        <div className='col-12 col-lg-8 mb-4'>
           <label htmlFor="email" className='mb-2'>email address</label>
           <input
             id="email"
@@ -67,7 +67,7 @@ function Userform() {
           {errors.email && <p className='text-danger'>{errors.email.message}</p>}
         </div>
   
-        <div className='col-12 col-md-4 mb-4 form_select'>
+        <div className='col-12 col-lg-4 mb-4 form_select'>
           <label htmlFor="role" className='mb-2'>role</label>
           <select id='role' 
            {...register('role', { required: 'role is required'})}
@@ -79,7 +79,7 @@ function Userform() {
           {errors.role && <p className='text-danger'>{errors.role.message}</p>}
         </div>
 
-        <div className='col-12 col-md-6 mb-4'>
+        <div className='col-12 col-lg-6 mb-4'>
           <label htmlFor="mobile" className='mb-2'>mobile number </label>
           <input
             id="mobile"
@@ -89,7 +89,7 @@ function Userform() {
           {errors.mobile && <p className='text-danger'>{errors.mobile.message}</p>}
         </div>
 
-        <div className='col-12 col-md-6 mb-4'>
+        <div className='col-12 col-lg-6 mb-4'>
           <label htmlFor="userId" className='mb-2'>user id</label>
           <input
             id="userId"
@@ -99,7 +99,7 @@ function Userform() {
           {errors.userId && <p className='text-danger'>{errors.userId.message}</p>}
         </div>
 
-        <div className='col-12 col-md-6 mb-4'>
+        <div className='col-12 col-lg-6 mb-4'>
           <label htmlFor="password" className='mb-2'>password</label>
           <input
             id="password"
@@ -109,7 +109,7 @@ function Userform() {
           {errors.password && <p className='text-danger'>{errors.password.message}</p>}
         </div>
 
-        <div className='col-12 col-md-6 mb-4'>
+        <div className='col-12 col-lg-6 mb-4'>
           <label htmlFor="passwordConfirmation" className='mb-2'>password confirmation</label>
           <input
             id="passwordConfirmation"
@@ -120,8 +120,8 @@ function Userform() {
         </div>
 
        <div className='artical-form-btn mb-4'>
-       <button className='col-12 col-md-2 m-3 btn_close order-1 order-md-0' type="submit">cancel</button>
-       <button className='col-12 col-md-2 m-3 order-0 order-md-0' type="submit">save</button>
+       <button className='col-12 col-lg-2 m-3 btn_close order-1 order-md-0' type="submit">cancel</button>
+       <button className='col-12 col-lg-2 m-3 order-0 order-md-0' type="submit">save</button>
        </div>
         
         </div>
