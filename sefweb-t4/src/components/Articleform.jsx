@@ -15,6 +15,11 @@ function Articleform() {
       
         {/* header */}
 
+        <div className='row py-5 create-title'>
+        <h2 className=''>create new article</h2>
+          <p>6th jun 2024</p>
+        </div>
+
         <div className='section-forms '>
         <Sidebar />
         <div className='ms-0 ms-md-5 mt-5'>
