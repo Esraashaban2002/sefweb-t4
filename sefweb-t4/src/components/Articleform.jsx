@@ -11,7 +11,7 @@ function Articleform() {
     return (
       <div className='section-article'>
          <div className='overlay'> 
-     <div className='container'>
+     <div className='container-fluid container-md'>
       
         {/* header */}
 
@@ -22,7 +22,7 @@ function Articleform() {
                 <h2 className='col-12 col-md-6'>add article details</h2>
                 <button  className='col-6 col-md-2'>publish</button>
             </div>
-        <form>
+        <form className='w-100'>
         <div className='row'>
         <div className='col-12 col-md-7 mb-4 order-1 order-md-0'>
           <label htmlFor="title" className='mb-2'>Article Title</label>

@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 a{
@@ -74,7 +74,8 @@ li{
   .section-article form select {
     appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none;   
+    -moz-appearance: none;
+    text-transform: capitalize;   
   }
 .section-article form .form_select::after {
     content: '\f078'; /* Font Awesome chevron-down */
@@ -91,7 +92,7 @@ li{
   .section-article form select option {
     background-color: gray;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
   .section-article form .artical-form-btn{
     display: flex;
@@ -105,8 +106,9 @@ li{
     background-color:  var(--yellow) ;
     color: #fff;
     border: none;
-    padding: 0.25rem;
-    border-radius: 4px;
+    padding: 5px 15px;
+    width: auto;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
     text-transform: uppercase;
@@ -124,9 +126,8 @@ li{
   }
 @media (max-width: 768px) {
     .section-article form .artical-form-btn{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
       }
       .section-article .section-article-title h2{
         border: 0;

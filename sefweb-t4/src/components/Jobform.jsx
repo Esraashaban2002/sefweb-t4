@@ -10,7 +10,7 @@ function Jobform() {
     return (
         <div className='section-article'>
            <div className='overlay'> 
-       <div className='container'>
+       <div className='container-fluid container-md'>
         
           {/* header */}
   
