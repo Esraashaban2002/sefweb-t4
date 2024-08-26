@@ -7,7 +7,6 @@ import DragDropFile from './DragDropFile'
 
 function Articleform() {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    // const {handleFileChange , handleDrop  , handleDragOver} = DragDropFile;
     return (
       <div className='section-article'>
          <div className='overlay'> 
