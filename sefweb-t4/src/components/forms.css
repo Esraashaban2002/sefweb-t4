@@ -1,0 +1,297 @@
+:root{
+    --yellow :  #BF9B30;
+    --yellowHover : #f5c430  ;
+    --black :  #1A1919;
+    --gray :  #D0D0D0;
+    --green :  #34A853;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.section-article{
+    text-transform: capitalize;
+    color: #fff;
+    position: relative;
+    background-image: url(/public/images/backgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section-article .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.9);
+}
+.section-article .section-article-title{
+    justify-content: space-between;
+}
+.section-article .section-article-title h2{
+    width: auto;
+    border-bottom: 1px solid  var(--yellow)    ;
+}
+
+.section-article .section-forms {
+    display: flex;
+    justify-content: space-between;
+}
+.section-article form , .section-article .form-title {
+    margin: 0 auto;
+  }
+ .section-article form .skills-input,
+ .section-article form input,
+ .section-article form select,
+ .section-article form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border:0;
+    border-radius: 5px;
+    background-color: rgba(208, 208, 208,0.2);
+    color: #fff;
+    outline: 0;  
+  }
+  .section-article form input:focus,
+ .section-article form select:focus,
+ .section-article form textarea:focus{
+    outline: 1px solid #BF9B30;
+  }
+  .section-article form label{
+    font-size: 22px;
+  }
+  .section-article form .form_select{
+    position: relative;
+}
+  .section-article form select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;   
+  }
+.section-article form .form_select::after {
+    content: '\f078'; /* Font Awesome chevron-down */
+    font-family: 'Font Awesome 5 Free';
+    font-weight:900;
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 22px;
+    pointer-events: none;
+  }
+  .section-article form select option {
+    background-color: gray;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .section-article form .artical-form-btn{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .section-article form textarea{
+    resize: none;
+  }
+ .section-article form .artical-form-btn button ,
+ .section-article .section-article-title button {
+    background-color:  var(--yellow) ;
+    color: #fff;
+    border: none;
+    padding: 0.25rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.section-article form .artical-form-btn button:hover,
+.section-article .section-article-title button:hover {
+    background-color:  var(--yellowHover) ;
+}
+.section-article form .artical-form-btn .btn_close{
+    background-color: var(--gray);
+  }
+  .section-article form .artical-form-btn .btn_close:hover{
+    background-color: var(--gray);
+    opacity: 0.8;
+  }
+@media (max-width: 768px) {
+    .section-article form .artical-form-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section-article .section-article-title h2{
+        border: 0;
+      }
+      .section-article .section-article-title button{
+        display: none;
+      }
+      .section-article form{
+        background-color: rgba(26, 25, 25,0.5);
+        padding: 20px;
+        border-radius: 10px;
+      }
+     
+}
+
+/* Hide the placeholder text by making the text color transparent */
+  input[type="date"]::-webkit-datetime-edit ,
+  input[type="date"]::-webkit-datetime-edit-year-field,
+  input[type="date"]::-webkit-datetime-edit-month-field,
+  input[type="date"]::-webkit-datetime-edit-day-field,
+  input[type="time"]::-webkit-datetime-edit ,
+  input[type="time"]::-webkit-datetime-edit-year-field,
+  input[type="time"]::-webkit-datetime-edit-month-field,
+  input[type="time"]::-webkit-datetime-edit-day-field {
+    color: transparent;
+  }
+
+input[type="date"]:user-valid::-webkit-datetime-edit,
+input[type="date"]:user-valid::-webkit-datetime-edit-year-field,
+input[type="date"]:user-valid::-webkit-datetime-edit-month-field,
+input[type="date"]:user-valid::-webkit-datetime-edit-day-field ,
+input[type="time"]:user-valid::-webkit-datetime-edit ,
+input[type="time"]:user-valid::-webkit-datetime-edit-year-field,
+input[type="time"]:user-valid::-webkit-datetime-edit-month-field,
+input[type="time"]:user-valid::-webkit-datetime-edit-day-field {
+    color: initial;
+    color: #fff;
+}
+
+.file-drop-area {
+    position: relative;
+    border: 2px dashed  var(--yellow);
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+  }
+  .file-drop-area:hover {
+    border-color: var(--yellowHover) ;
+  }
+  
+  .drop-message {
+    font-size: 18px;
+    color: #fff;
+  }
+  .file-drop-area .formate{
+    color: var(--gray);
+    font-size: 14px;
+    opacity: 0.6;
+  }
+ .browse .browse-button {
+    border: none;
+    color:  var(--yellow) ;
+    background: none;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+.radio-input{
+  display: flex;
+  align-items: baseline;
+  height: fit-content;
+  align-self: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+  
+  }
+  .radio-input input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+.radio-input label{
+  cursor: pointer;
+  width: 200px;
+  margin-left: 20px;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.radio-input:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.radio-input input:checked ~ .checkmark {
+  background-color: #BF9B30;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio-input input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio-input .checkmark:after {
+ 	top: 50%;
+	left: 50%;
+  transform: translate(-50% , -50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #BF9B30;
+}
+
+.checkmark::before {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio-input input:checked ~ .checkmark::before {
+  display: block;
+}
+.radio-input .checkmark::before {
+ 	top: 50%;
+	left: 50%;
+  transform: translate(-50% ,-50%);
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.skills-btn{
+  background: none;
+  border: 2px solid #BF9B30;
+  color : #fff;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+.plusIcon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid #BF9B30;
+  text-align: center;
+  color: #BF9B30;
+}
+
+.lesson{
+  border: 2px dashed #BF9B30;
+  padding: 20px;
+  border-radius: 10px;
+}
+.lesson i{
+  color: #BF9B30;
+  font-size: 30px;
+}
