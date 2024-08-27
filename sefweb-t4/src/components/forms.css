@@ -32,21 +32,43 @@ li{
     height: 100%;
     background-color: rgba(0, 0, 0,0.9);
 }
+.container-section{
+  width: 90%;
+  margin: auto;
+}
 .section-article .section-article-title{
-    justify-content: space-between;
+  justify-content: space-between;
 }
-.section-article .create-title h2 ,
 .section-article .section-article-title h2 {
-    width: auto;
-    border-bottom: 2px solid  var(--yellow) ;
-    padding-left: 0;
-    padding-bottom: 5px;
-    font-size: 26px;
+  width: auto;
+  border-bottom: 2px solid  var(--yellow) ;
+  padding-left: 0;
+  padding-bottom: 5px;
+  font-size: 26px;
 }
-.section-article .create-title p{
-  font-size: 18px;
+.section-article .create-title h2 {
+width: auto;
+padding-left: 0;
+font-size: 26px;
+position: relative;
 }
 
+.section-article .create-title h2::before {
+content: "";
+position: absolute;
+bottom: -5px;
+left: 0;
+width: 50%;
+height: 2px;
+background-color:  #BF9B30;
+transition: width 0.3s ease-in-out;
+}
+.section-article .create-title h2:hover::before {
+width:100%;
+}
+.section-article .create-title p{
+font-size: 18px;
+}
 .section-article .section-forms {
     display: flex;
     justify-content: space-between;
@@ -81,8 +103,8 @@ li{
   .section-article form select {
     appearance: none;
     -webkit-appearance: none;
-    -moz-appearance: none;
-    text-transform: capitalize;   
+    -moz-appearance: none; 
+    text-transform: capitalize;  
   }
 .section-article form .form_select::after {
     content: '\f078'; /* Font Awesome chevron-down */
@@ -115,7 +137,7 @@ li{
     border: none;
     padding: 5px 15px;
     width: auto;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
     font-size: 20px;
     text-transform: uppercase;
@@ -203,79 +225,78 @@ input[type="time"]:user-valid::-webkit-datetime-edit-day-field {
     cursor: pointer;
   }
   
-.radio-input{
-  display: flex;
-  align-items: baseline;
-  height: fit-content;
-  align-self: center;
+  .radio-input {
+    display: flex;
+    align-items: center;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
-  
+    font-size: 1.4rem;
   }
+  
   .radio-input input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
   }
-.radio-input label{
-  cursor: pointer;
-  width: 200px;
-  margin-left: 20px;
-}
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 26px;
-  width: 26px;
-  background-color: #eee;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-.radio-input:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-.radio-input input:checked ~ .checkmark {
-  background-color: #BF9B30;
-}
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.radio-input input:checked ~ .checkmark:after {
-  display: block;
-}
-.radio-input .checkmark:after {
- 	top: 50%;
-	left: 50%;
-  transform: translate(-50% , -50%);
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background: #BF9B30;
-}
-
-.checkmark::before {
-  content: "";
-  position: absolute;
-  display: none;
-}
-.radio-input input:checked ~ .checkmark::before {
-  display: block;
-}
-.radio-input .checkmark::before {
- 	top: 50%;
-	left: 50%;
-  transform: translate(-50% ,-50%);
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background: #fff;
-}
+  
+  .radio-input label {
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transform: translateY(-50%);
+  }
+  
+  .radio-input:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .radio-input input:checked ~ .checkmark {
+    background-color: #BF9B30;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: #BF9B30;
+  }
+  
+  .radio-input input:checked ~ .checkmark:after,
+  .radio-input input:checked ~ .checkmark::before {
+    display: block;
+  }
+  
+  .checkmark::before {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+  }
 
 .skills-btn{
   background: none;

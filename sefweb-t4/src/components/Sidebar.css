@@ -60,6 +60,6 @@ li {
   }
   
   .sidebar ul li a:hover::before {
-    width:100%;
+    width: 100%;
   }
   

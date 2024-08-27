@@ -11,7 +11,7 @@ function Courseform() {
     return (
       <div className='section-article'>
          <div className='overlay'> 
-     <div className='container-fluid container-md'>
+     <div className='container-section'>
       
         {/* header */}
 

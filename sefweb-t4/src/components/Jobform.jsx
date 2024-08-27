@@ -10,11 +10,11 @@ function Jobform() {
     return (
         <div className='section-article'>
            <div className='overlay'> 
-       <div className='container-fluid container-md'>
+       <div className='container-section'>
         
           {/* header */}
 
-          <div className='row py-5 create-title'>
+          <div className='row  py-5 create-title'>
         <h2 className=''>create new job</h2>
           <p>6th jun 2024</p>
         </div>
@@ -108,19 +108,20 @@ function Jobform() {
           {errors.jobType && <p className='text-danger'>{errors.jobType.message}</p>}
         </div>
         
-        <div className='col-6 col-lg-2 radio-input '>
-        <label htmlFor="remote">remote
+        <div className='col-12 col-lg-4 d-flex justify-content-between '>
+        <label htmlFor="remote" className='radio-input '>remote
             <input type="radio"  name='radio' id='remote' />
-            <span class="checkmark"></span>
+            <span className="checkmark"></span>
             </label>
-        </div>
 
-        <div className='col-6 col-lg-2 radio-input'>
-        <label htmlFor="onSite">on Site
+        <label htmlFor="onSite" className='radio-input '>on Site
             <input type="radio" name='radio' id='onSite' />
-            <span class="checkmark"></span>
+            <span className="checkmark"></span>
              </label>
-        </div>
+      
+           </div>
+
+    
 
           <div className='col-12 col-lg-8 mb-4 row '>
           <label>Salary Range</label>

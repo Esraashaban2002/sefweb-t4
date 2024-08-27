@@ -10,12 +10,12 @@ function Certificateform() {
   return (
     <div className='section-article'>
        <div className='overlay'> 
-   <div className='container-fluid container-md'>
+   <div className='container-section'>
     
       {/* header */}
 
-      <div className='row py-5 create-title'>
-        <h2 className=''>create new Certificate</h2>
+      <div className='row  py-5 create-title'>
+        <h2 className=''>upload certificate</h2>
           <p>6th jun 2024</p>
         </div>
 

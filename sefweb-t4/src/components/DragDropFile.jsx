@@ -6,12 +6,15 @@ function DragDropFile() {
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
   const [fileName, setFileName] = useState('');
 
+  // const onSubmit = data => {
+  //   console.log(data);
+  // };
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
       setFileName(file.name);
-      setValue('Photo', file);
+      setValue('Photo', file); // Set the file value in the form
     }
   };
 
@@ -21,7 +24,7 @@ function DragDropFile() {
     const file = event.dataTransfer.files[0];
     if (file) {
       setFileName(file.name);
-      setValue('Photo', file);
+      setValue('Photo', file); // Set the file value in the form
     }
   };
 

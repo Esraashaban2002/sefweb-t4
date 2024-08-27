@@ -1,4 +1,4 @@
-import React  from 'react'
+import React ,{useState} from 'react'
 import { useForm } from 'react-hook-form'
 import Sidebar from './Sidebar'
 import './forms.css'
@@ -11,11 +11,11 @@ function Articleform() {
     return (
       <div className='section-article'>
          <div className='overlay'> 
-     <div className='container-fluid container-md'>
+     <div className='container-section'>
       
         {/* header */}
 
-        <div className='row py-5 create-title'>
+        <div className='row  py-5 create-title'>
         <h2 className=''>create new article</h2>
           <p>6th jun 2024</p>
         </div>
